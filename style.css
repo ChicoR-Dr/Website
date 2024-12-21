@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Garamond, sans-serif;
+  font-family: Garamond, serif;
 }
 
 header {
@@ -28,9 +28,33 @@ header {
 }
 
 .intro {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 50px 20px;
   background: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Optional: Control max-width */
+}
+
+.text-content {
+  flex: 1; /* Takes up the left part of the space */
+  padding-right: 20px; /* Space between text and photo */
+  text-align: left;
+}
+
+h1, h2, p {
+  margin: 10px 0;
+}
+
+h2 {
+  color: #4CAF50;
 }
 
 .intro h1 {
@@ -46,7 +70,6 @@ header {
 
 .contact-info p {
   font-size: 14px;
-  margin: 5px 0;
   color: #555;
 }
 
@@ -64,6 +87,18 @@ header {
 
 .social-icons a:hover {
   color: #4CAF50;
+}
+
+.photo {
+  flex: 1; /* Takes up the right part of the space */
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  width: 80%; /* Adjust photo size */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for effect */
 }
 
 .about {
