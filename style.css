@@ -28,10 +28,11 @@ header {
 }
 
 .intro-container {
-  display: flex;
-  align-items: center;
+  display: flex; /* Ensure the layout is in a row */
+  align-items: center; /* Vertically center the content */
   width: 100%;
   max-width: 1200px; /* Optional: Control max-width */
+  margin: 0 auto; /* Center the container */
 }
 
 .intro {
@@ -52,7 +53,7 @@ header {
 }
 
 .photo img {
-  width: 40%; /* Adjust photo size */
+  width: 80%; /* Adjust photo size */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for effect */
 }
