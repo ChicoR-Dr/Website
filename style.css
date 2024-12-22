@@ -10,6 +10,29 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative; /* Needed for the pseudo-element */
+}
+
+.nav-links li:not(:last-child)::after {
+  content: ""; /* Creates a pseudo-element */
+  display: block;
+  width: 1px; /* Width of the line */
+  height: 20px; /* Height of the line */
+  background-color: #4CAF50; /* Color of the line */
+  position: absolute;
+  right: -10px; /* Positioning the line to the right of each item */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
 
 
 .intro-container {
@@ -156,26 +179,3 @@ h2 {
 }
 
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.nav-links li {
-  margin: 0 15px;
-  position: relative; /* Needed for the pseudo-element */
-}
-
-.nav-links li:not(:last-child)::after {
-  content: ""; /* Creates a pseudo-element */
-  display: block;
-  width: 1px; /* Width of the line */
-  height: 20px; /* Height of the line */
-  background-color: #4CAF50; /* Color of the line */
-  position: absolute;
-  right: -10px; /* Positioning the line to the right of each item */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for vertical centering */
-}
