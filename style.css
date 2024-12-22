@@ -26,7 +26,9 @@ header {
 
 .nav-links a {
   text-decoration: none;
+  
   color: #333;
+
 }
 
 .intro-container {
@@ -48,13 +50,12 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/brain_3.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
+  background-image: url('brain_3.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.7); /* White overlay with 30% opacity */
+  background-color: rgba(255, 255, 255, 0.1); /* White overlay with 30% opacity */
   background-blend-mode: overlay; /* Blends background image with white */
-  
   z-index: -1;
 }
 
@@ -78,43 +79,48 @@ header {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, p {
-  margin: 10px 0;
-}
 
-h2 {
-  color: #4DB6B3;
-}
 
 .intro h1 {
   font-size: 24px;
   margin: 10px 0;
+  color: white;
 }
 
 .intro h2 {
   font-size: 36px;
   margin: 5px 0;
   color: #4DB6B3;
+
+}
+.intro p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: white;
+
 }
 
 .contact-info p {
   font-size: 14px;
-  color: #555;
+  color: darkgray;
+
 }
 
 .social-icons {
   margin-top: 15px;
+  color: white;
 }
 
 .social-icons a {
   text-decoration: none;
   margin: 0 10px;
   font-size: 20px;
-  color: #555;
+  
+  color: white;
   transition: color 0.3s;
 }
 
