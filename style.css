@@ -34,6 +34,7 @@ header {
   max-width: 1200px; /* Limit overall width */
   margin: 0 auto;
   padding: 50px 20px;
+  min-height: 100vh; 
 }
 
 .intro, .photo {
