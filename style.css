@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Garamond, serif;
+  font-family: Garamond, san-serif;
 }
 
 header {
@@ -39,7 +39,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('images/brain_3.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
+  background-image: url('images/brain_6.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,8 +76,8 @@ header {
 }
 
 .photo img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -88,7 +88,7 @@ header {
 .intro h1 {
   font-size: 24px;
   margin: 10px 0;
-  color: white;
+  color: #333;
 }
 
 .intro h2 {
@@ -100,19 +100,19 @@ header {
 .intro p {
   font-size: 18px;
   margin: 5px 0;
-  color: white;
+  color: #333;
 
 }
 
 .contact-info p {
   font-size: 14px;
-  color: darkgray;
+  color: #333;
 
 }
 
 .social-icons {
   margin-top: 15px;
-  color: white;
+  color: #333;
 }
 
 .social-icons a {
@@ -120,7 +120,7 @@ header {
   margin: 0 10px;
   font-size: 20px;
   
-  color: white;
+  color: #333;
   transition: color 0.3s;
 }
 
