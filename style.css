@@ -130,3 +130,42 @@ h2 {
 .btn:hover {
   background-color: #45a049;
 }
+
+.publications {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.publications h3 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+.publication-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.publication-list li {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.publication-list h4 {
+  color: #333;
+  margin-top: 0;
+}
+
+.publication-list p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.btn-small {
+  font-size: 14px;
+  padding: 5px 10px;
+}
