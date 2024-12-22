@@ -27,16 +27,27 @@ header {
   color: #333;
 }
 
-
-
-
 .intro-container {
-  position: relative;
-  min-height: calc(100vh - /* Adjust for header height if necessary */);
-  display: flex; /* Use Flexbox */
-  align-items: center; /* Center vertically */
-  justify-content: space-between; /* Space between intro and photo */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Changed from space-between */
+  max-width: 1200px; /* Limit overall width */
+  margin: 0 auto;
+  padding: 50px 20px;
 }
+
+.intro, .photo {
+  flex: 1;
+  max-width: 45%; /* Prevent stretching too wide */
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 .background-overlay {
   position: absolute;
@@ -51,24 +62,7 @@ header {
   opacity: 0.5; /* Set transparency to 50% */
 }
 
-.intro {
-   z-index:1; /* Ensure it appears above the background */
-   padding-left:20px; /* Optional padding */
-}
 
-.photo {
-   z-index:1; /* Ensure it appears above the background */
-   display:flex; 
-   justify-content:center; 
-   align-items:center; 
-   padding-right:20px; /* Optional padding */
-}
-
-.photo img {
-   width:300px; /* Adjust size as needed */
-   height:auto; 
-   border-radius:50%; /* Optional circular image */
-}
 
 
 
