@@ -22,20 +22,12 @@ header {
   position: relative; /* Needed for the pseudo-element */
 }
 
-.nav-links li:not(:last-child)::after {
-  content: ""; /* Creates a pseudo-element */
-  display: block;
-  width: 1px; /* Width of the line */
-  height: 20px; /* Height of the line */
-  background-color: #4CAF50; /* Color of the line */
-  position: absolute;
-  right: -10px; /* Positioning the line to the right of each item */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for vertical centering */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
 }
-.home {
-  position: relative;
-}
+
+
 
 
 .intro-container {
