@@ -34,7 +34,8 @@ header {
 .intro-container {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,11 +47,11 @@ header {
 .intro-container::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   right: 0;
   bottom: 0;
-  background-image: url('images/brain_6.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
+  background-image: url('images/brain_16.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +67,7 @@ header {
 }
 
 .intro {
-  padding-right: 20px;
+  padding-right: 80px;
 }
 
 .photo {
@@ -76,8 +77,8 @@ header {
 }
 
 .photo img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,9 +93,9 @@ header {
 }
 
 .intro h2 {
-  font-size: 36px;
+  font-size: 30px;
   margin: 5px 0;
-  color: #4DB6B3;
+  color: #4c6d7c;  /* #4c6d7c bismarck  #6796a4 shore water #44efff shimmering cyan #2c7992(turkish stone) #008080 current teal, #008794    #4DB6B3(old) #30BA8F #00008b (dark blue) #A020F0 purple #0F5289*/
 
 }
 .intro p {
@@ -125,7 +126,7 @@ header {
 }
 
 .social-icons a:hover {
-  color: #4DB6B3;
+  color: #4c6d7c;
 }
 
 .about {
@@ -140,7 +141,7 @@ header {
   padding: 5px 10px;
   border: 1px solid #4CAF50;
   border-radius: 5px;
-  color: #4DB6B3;
+  color: #4c6d7c;
   font-size: 14px;
 }
 
@@ -148,7 +149,7 @@ header {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 15px;
-  background-color: #4DB6B3;
+  background-color: #4c6d7c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -158,7 +159,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #4DB6B3;
+  background-color: #4c6d7c;
 }
 
 .publications {
@@ -168,7 +169,7 @@ header {
 
 .publications h3 {
   text-align: center;
-  color: #4DB6B3;
+  color: #4c6d7c;
   margin-bottom: 30px;
 }
 
