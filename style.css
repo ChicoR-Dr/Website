@@ -38,15 +38,25 @@ header {
   min-height: 100vh; 
 }
 
-.intro, .photo {
+.intro {
   flex: 1;
-  max-width: 45%; /* Prevent stretching too wide */
+  padding-right: 20px;
 }
 
 .photo {
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+.photo img {
+  width: 300px;  /* You can adjust this value as needed */
+  height: 300px; /* Make sure it's the same as the width */
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
 
 
 
