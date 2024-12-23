@@ -2,34 +2,45 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 60px; /* Should match the header height */
   font-family: Garamond, san-serif;
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff; /* Or any color you prefer */
+  display: flex;
+  justify-content: center; /* Center the nav horizontally */
+  align-items: center; /* Center the nav vertically */
+  height: 60px; /* Adjust this value as needed */
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value based on your design */
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
-  margin: 0 15px;
-  position: relative;
+  margin: 0 15px; /* Adjust spacing between nav items */
 }
 
 .nav-links a {
   text-decoration: none;
-  
-  color: #333;
-
+  color: #333; /* Adjust color as needed */
 }
+
 
 .intro-container {
   position: relative;
