@@ -162,43 +162,117 @@ header {
   background-color: #4c6d7c;
 }
 
-.publications {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-}
 
-.publications h3 {
-  text-align: center;
-  color: #4c6d7c;
-  margin-bottom: 30px;
-}
-
-.publication-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.publication-list li {
-  background-color: #fff;
+.Publications {
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
 }
 
-.publication-list h4 {
+.Publications-title {
+  font-size: 1.5em; /* Larger font size for title */
+  font-weight: bold;
   color: #333;
-  margin-top: 0;
+  margin-bottom: 2px;
 }
 
-.publication-list p {
-  color: #666;
-  margin: 5px 0;
+.Publications-journal {
+  font-size: 0.9em; /* Smaller font size for journal name */
+  font-style: italic;
+  color: #666; /* Lighter color for journal */
+}
+
+.Publications p {
+  margin: 2px 0; /* Adjust spacing between paragraphs */
 }
 
 .btn-small {
-  font-size: 14px;
-  padding: 5px 10px;
+  font-size: 0.9em; /* Adjust button size */
 }
 
+.experience {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: 'Garamond', serif;
+}
 
+.timeline {
+  position: relative;
+  max-width: 800px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 20px; /* Adjust based on your design */
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  padding-left: 50px; /* Space for the circle */
+  margin-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #007bff; /* Circle border color */
+  border-radius: 50%;
+  left: 10px; /* Position on the timeline line */
+  top: 0;
+  z-index: 2;
+}
+
+.timeline-content {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .timeline {
+    padding: 10px;
+  }
+  
+  .timeline::before {
+    left: 10px;
+  }
+  
+  .timeline-item {
+    padding-left: 40px;
+  }
+  
+  .timeline-item::before {
+    left: 0;
+  }
+}
