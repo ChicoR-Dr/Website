@@ -61,8 +61,8 @@ nav {
   top: 0%;
   left: 0%;
   right: 0;
-  bottom: 0;
-  background-image: url('images/brain_16.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
+  bottom: 10%;
+  background-image: url('images/background.png');/* https://www.artificialintelligence-news.com/news/research-ai-human-brains-subconscious/  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,17 +140,24 @@ nav {
   color: #4c6d7c;
 }
 
+.about h3 {
+  font-size: 2em; /* Adjust this value as needed */
+  font-weight: bold; /* Optional: makes the heading bolder */
+  margin-bottom: 20px; /* Adds some space below the heading */
+}
+
 .about {
   background: #fff;
   padding: 50px 20px;
   text-align: center;
+
 }
 
 .about .skills span {
   display: inline-block;
   margin: 5px;
   padding: 5px 10px;
-  border: 1px solid #4CAF50;
+  border: 1px solid #4c6d7c;
   border-radius: 5px;
   color: #4c6d7c;
   font-size: 14px;
@@ -175,32 +182,64 @@ nav {
 
 
 .Publications {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
 
-.Publications-title {
-  font-size: 1.5em; /* Larger font size for title */
+.Publications h3 {
+  font-size: 1.5em;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 2px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
-.Publications-journal {
-  font-size: 0.9em; /* Smaller font size for journal name */
+.publication {
+  margin-bottom: 10px;
+}
+
+.publication-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4c6d7c;
+  margin-bottom: 5px;
+}
+
+.publication-journal {
+  font-size: 0.9em;
   font-style: italic;
-  color: #666; /* Lighter color for journal */
+  color: #666;
+  margin-bottom: 1px;
 }
 
-.Publications p {
-  margin: 2px 0; /* Adjust spacing between paragraphs */
+.publication p {
+  margin: 1px 0; /* Adjusted for general paragraphs */
 }
+
+.publication p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph (which contains the button) */
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4c6d7c;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
 
 .btn-small {
-  font-size: 0.9em; /* Adjust button size */
+  font-size: 0.5em; /* Adjust button size */
 }
 
 .experience {
@@ -240,7 +279,7 @@ nav {
   width: 20px;
   height: 20px;
   background-color: #fff;
-  border: 2px solid #007bff; /* Circle border color */
+  border: 2px solid #4c6d7c; /* Circle border color */
   border-radius: 50%;
   left: 10px; /* Position on the timeline line */
   top: 0;
