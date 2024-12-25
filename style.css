@@ -4,6 +4,7 @@ body {
   padding: 0;
   padding-top: 60px; /* Should match the header height */
   font-family: Garamond, san-serif;
+  font-weight: 300; /* Set to normal (400) */
 }
 
 header {
@@ -168,7 +169,7 @@ nav {
 }
 
 .skills h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #333;
   margin-bottom: 15px;
   text-align: center;
