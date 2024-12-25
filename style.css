@@ -140,45 +140,103 @@ nav {
   color: #4c6d7c;
 }
 
-.about h3 {
-  font-size: 2em; /* Adjust this value as needed */
-  font-weight: bold; /* Optional: makes the heading bolder */
-  margin-bottom: 20px; /* Adds some space below the heading */
-}
 
 .about {
-  background: #fff;
-  padding: 50px 20px;
+  margin-bottom: 10px; /* Match margin with other sections */
+  padding: 15px; /* Match padding with other sections */
+  border: 1px solid #ddd; /* Match border style */
+  border-radius: 5px; /* Match border radius */
+  background-color: #f9f9f9; /* Match background color */
   text-align: center;
-
 }
 
-.about .skills span {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  border: 1px solid #4c6d7c;
-  border-radius: 5px;
-  color: #4c6d7c;
-  font-size: 14px;
+.about h3 {
+  font-size: 1.5em; /* Match font size with other section headings */
+  font-weight: bold; 
+  color: black;
+  margin-top: 0;
+  margin-bottom: 5px; /* Match margin with other headings */
 }
 
-.btn {
-  display: inline-block;
+.about p {
+  margin: 1px 0; /* Adjusted for general paragraphs to match */
+}
+
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skills h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skill-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-skill-btn {
+  font-size: 1.2em;
   padding: 10px 20px;
-  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #4c6d7c;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
-  text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #4c6d7c;
+.sub-categories {
+  width: 100%;
 }
+
+.sub-category {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.sub-category h4 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-buttons span {
+  padding: 5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  font-size: 0.9em;
+  color: #333;
+  display: inline-block;
+}
+
+/* Random colors for skill buttons */
+.skill-buttons span:nth-child(5n+1) { background-color: #FFB3BA; }
+.skill-buttons span:nth-child(5n+2) { background-color: #BAFFC9; }
+.skill-buttons span:nth-child(5n+3) { background-color: #BAE1FF; }
+.skill-buttons span:nth-child(5n+4) { background-color: #FFFFBA; }
+.skill-buttons span:nth-child(5n+5) { background-color: #FFD8B1; }
 
 
 .Publications {
@@ -325,4 +383,46 @@ nav {
   .timeline-item::before {
     left: 0;
   }
+}
+
+.work projects {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.work projectss h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 5px; /* Changed from 15px to 5px */
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4c6d7c;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 1px; /* Changed from 10px to 1px */
+  line-height: 1.4; /* You may want to remove this if you want exact matching */
+}
+
+.project p {
+  margin: 1px 0; /* Changed from 5px to 1px */
+}
+
+.project p:last-child {
+  margin-bottom: 0; /* Changed from 10 to 0 */
 }
