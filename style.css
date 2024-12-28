@@ -143,6 +143,7 @@ nav {
 
 
 .about {
+  padding-top: 60px;
   margin-bottom: 30px;
   padding: 40px;
   border: 1px solid #ddd;
@@ -290,11 +291,16 @@ nav {
 
 
 .Publications {
+  margin-bottom: 30px;
   margin-bottom: 10px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+}
+.Publications .container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .Publications h3 {
@@ -435,19 +441,28 @@ nav {
   }
 }
 
-.work projects {
-  margin-bottom: 10px;
-  padding: 15px;
+.work-projects {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 25px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
 
-.work projectss h2 {
+.work-projects .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+.work-projectss h2 {
   font-size: 1.5em;
   font-weight: bold;
   color: black;
-  margin-top: 0;
+  margin-top: 10;
   margin-bottom: 5px; /* Changed from 15px to 5px */
 }
 
@@ -470,9 +485,12 @@ nav {
 }
 
 .project p {
-  margin: 1px 0; /* Changed from 5px to 1px */
+  margin: 2px 0; /* Changed from 5px to 1px */
 }
 
 .project p:last-child {
   margin-bottom: 0; /* Changed from 10 to 0 */
+}
+.project-list {
+  margin-bottom: 50px;
 }
