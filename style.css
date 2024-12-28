@@ -143,33 +143,69 @@ nav {
 
 
 .about {
-  margin-bottom: 10px; /* Match margin with other sections */
-  padding: 15px; /* Match padding with other sections */
-  border: 1px solid #ddd; /* Match border style */
-  border-radius: 5px; /* Match border radius */
-  background-color: #f9f9f9; /* Match background color */
-  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.about .container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
 }
 
 .about h3 {
-  font-size: 1.5em; /* Match font size with other section headings */
-  font-weight: bold; 
-  color: black;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #333;
   margin-top: 0;
-  margin-bottom: 5px; /* Match margin with other headings */
+  margin-bottom: 25px;
+  text-align: center; /* Center the heading */
 }
 
 .about p {
-  margin: 1px 0; /* Adjusted for general paragraphs to match */
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #444;
 }
+
+.about .btn {
+  display: block; /* Keeps the button inline */
+  padding: 12px 24px;
+  background-color: #4c6d7c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  
+   /* Centering styles */
+   margin-top: 20px; /* Space above the button */
+   margin-left: auto; /* Auto margins for centering */
+   margin-right: auto; /* Auto margins for centering */
+   text-align: center; /* Center text inside the button */
+   max-width: 200px;
+}
+
+.about .btn:hover {
+  background-color: #3a5561;
+}
+
+
 
 
 .skills {
   margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .skills h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #333;
   margin-bottom: 15px;
   text-align: center;
@@ -204,7 +240,7 @@ nav {
 }
 
 .sub-category {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
@@ -220,7 +256,7 @@ nav {
 .skill-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .skill-buttons span {
@@ -232,12 +268,25 @@ nav {
   display: inline-block;
 }
 
-/* Random colors for skill buttons */
-.skill-buttons span:nth-child(5n+1) { background-color: #FFB3BA; }
-.skill-buttons span:nth-child(5n+2) { background-color: #BAFFC9; }
-.skill-buttons span:nth-child(5n+3) { background-color: #BAE1FF; }
-.skill-buttons span:nth-child(5n+4) { background-color: #FFFFBA; }
-.skill-buttons span:nth-child(5n+5) { background-color: #FFD8B1; }
+/* Random pastel colors for skill buttons */
+.skill-buttons span:nth-child(7n+1) { background-color: #FFD1DC; }
+.skill-buttons span:nth-child(7n+2) { background-color: #BDFCC9; }
+.skill-buttons span:nth-child(7n+3) { background-color: #B0E0E6; }
+.skill-buttons span:nth-child(7n+4) { background-color: #FFF5E1; }
+.skill-buttons span:nth-child(7n+5) { background-color: #E6E6FA; }
+.skill-buttons span:nth-child(7n+6) { background-color: #FFDAB9; }
+.skill-buttons span:nth-child(7n+7) { background-color: #98FB98; }
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  
+  .skill-column {
+    width: 100%;
+  }
+}
+
 
 
 .Publications {
