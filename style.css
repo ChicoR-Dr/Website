@@ -198,7 +198,6 @@ nav {
 
 
 
-
 .skills {
   margin-bottom: 20px;
   padding: 20px;
@@ -241,17 +240,10 @@ nav {
 }
 
 .sub-category {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
   margin-bottom: 15px;
-}
-
-.sub-category h4 {
-  font-size: 1.1em;
   color: #333;
-  margin-bottom: 10px;
 }
 
 .skill-buttons {
@@ -261,22 +253,22 @@ nav {
 }
 
 .skill-buttons span {
-  padding: 5px 10px;
-  background-color: #e0e0e0;
+  padding: 10px 15px;
   border-radius: 15px;
   font-size: 0.9em;
   color: #333;
   display: inline-block;
+  background-color: #e0e0e0;
 }
 
-/* Random pastel colors for skill buttons */
-.skill-buttons span:nth-child(7n+1) { background-color: #FFD1DC; }
-.skill-buttons span:nth-child(7n+2) { background-color: #BDFCC9; }
-.skill-buttons span:nth-child(7n+3) { background-color: #B0E0E6; }
-.skill-buttons span:nth-child(7n+4) { background-color: #FFF5E1; }
-.skill-buttons span:nth-child(7n+5) { background-color: #E6E6FA; }
-.skill-buttons span:nth-child(7n+6) { background-color: #FFDAB9; }
-.skill-buttons span:nth-child(7n+7) { background-color: #98FB98; }
+/* Assign consistent colors per category */
+.skill-programming .sub-category { background-color: #FFD1DC; border: 1px solid #FFB6C1; }
+.skill-database .sub-category { background-color: #BDFCC9; border: 1px solid #98FB98; }
+.skill-ml-algorithms .sub-category { background-color: #B0E0E6; border: 1px solid #87CEEB; }
+.skill-ml-frameworks .sub-category { background-color: #FFF5E1; border: 1px solid #FFDAB9; }
+.skill-ml-tools .sub-category { background-color: #E6E6FA; border: 1px solid #D8BFD8; }
+.skill-cloud .sub-category { background-color: #FFDAB9; border: 1px solid #FFA07A; }
+.skill-softskills .sub-category { background-color: #98FB98; border: 1px solid #32CD32; }
 
 @media (max-width: 768px) {
   .skills-container {
@@ -287,8 +279,6 @@ nav {
     width: 100%;
   }
 }
-
-
 
 .Publications {
   margin-bottom: 30px;
