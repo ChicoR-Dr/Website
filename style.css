@@ -451,15 +451,33 @@ nav {
   padding-right: 20px;
 }
 
-
-
-
-.work-projectss h2 {
+.work-projects h2 {
   font-size: 1.5em;
   font-weight: bold;
   color: black;
-  margin-top: 10;
-  margin-bottom: 15px; /* Changed from 15px to 5px */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.project-list {
+  margin-top: 20px; /* Add some space between the heading and the first project */
+}
+
+.project {
+  margin-bottom: 20px; /* Add space between each project */
+}
+
+.project-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Add space below the title */
+}
+
+.project-description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
 }
 
 
