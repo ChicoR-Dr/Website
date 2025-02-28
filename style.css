@@ -346,6 +346,12 @@ nav {
   font-size: 0.5em; /* Adjust button size */
 }
 
+
+
+
+
+
+
 .experience {
   background-color: #f9f9f9;
   padding: 50px 20px;
@@ -456,28 +462,79 @@ nav {
   margin-bottom: 5px; /* Changed from 15px to 5px */
 }
 
-.project {
-  margin-bottom: 1px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.project-title {
-  font-size: 1.2em;
+
+
+.Personal-Life {
+  padding-top: 60px;
+  margin-bottom: 30px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.Personal-Life .container {
+  max-width: 1200px; /* Ensured container is wide enough */
+  margin: 0 auto;
+}
+
+.Personal-Life h3 {
+  font-size: 2.2em;
   font-weight: bold;
-  color: #4c6d7c;
-  margin-bottom: 5px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.project-description {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 1px; /* Changed from 10px to 1px */
-  line-height: 1.4; /* You may want to remove this if you want exact matching */
+.Personal-Life h4 {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #333;
+  
+  text-align: center;
 }
 
-.project p {
-  margin: 2px 0; /* Changed from 5px to 1px */
+.Personal-Life p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: justify;
 }
 
-.project p:last-child {
-  margin-bottom: 0; /* Changed from 10 to 0 */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust gap as necessary */
+  margin-top: 40px;
+  flex-wrap: wrap; /* Allow images to wrap if needed */
+  align-items: center;
+}
+
+.image-item {
+  width: 22%; /* Set width to 22% for 4 images in a row */
+  text-align: center;
+  flex: 0 1 auto; /* Don't allow images to grow/shrink */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-item h3 {
+  margin-top: 18px;
+  font-size: 10px;
+  color: #333;
+  text-align: center;
 }
