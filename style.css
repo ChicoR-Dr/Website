@@ -552,3 +552,71 @@ nav {
   color: #333;
   text-align: center;
 }
+
+/* Featured Talks Section */
+.featured-talks {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;  /* Increased max width */
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;  /* Bigger title */
+    margin-bottom: 30px;
+}
+
+.talks-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.talk {
+    background: #ffffff;
+    padding: 30px;  /* More padding */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 800px;  /* Increased width */
+    text-align: center;
+}
+
+.talk h3 {
+    font-size: 24px;  /* Bigger heading */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.talk p {
+    font-size: 18px;  /* Bigger text */
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.video-container {
+    margin-top: 25px;
+}
+
+/* Watch on NVIDIA Button */
+.watch-video-btn {
+    display: inline-block;
+    background-color: #4c6d7c;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.watch-video-btn:hover {
+    background-color: #4c6d7c;
+}
