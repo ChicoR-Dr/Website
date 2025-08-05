@@ -1,1 +1,3 @@
-This is a personal website of Chinmay Rane
+'''
+This is a personal website of Chinmay Rane www.chinmayrane.com
+'''
