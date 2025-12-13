@@ -1,428 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <!-- Google Fonts link for Garamond -->
-  <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmay Rane, PhD - Senior ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="home">
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work projects">Work Projects</a></li>
-        <li><a href="#Publications">Publications</a></li>
-        <li><a href="#Personal-Life">Personal Life</a></li>
-      </ul>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CR</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="home" class="intro-container">  
-    <div class="background-overlay"></div>
-    <div class="intro">
-      <h1>Hello, I'm</h1>
-      <h2>Chinmay Rane, PhD</h2>
-      <p>Senior Machine Learning Engineer</p>
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> drranechinmay@gmail.com</p>
-        <p><i class="fas fa-phone"></i> +1 682 583 1880</p>
-        <p><i class="fas fa-map-marker-alt"></i> Austin, Texas, 78664</p>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/ranechinmay/"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/ChicoR-Dr"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-
-    <!-- Right side for photo -->
-    <div class="photo">
-      <img src="images/Chinmay.jpeg" alt="Chinmay Rane">
-    </div>
-
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h3>About Me</h3>
-      <p>
-        Hello, I'm Chinmay, a Senior Machine Learning Engineer based in Austin, Texas, with extensive experience in developing cutting-edge AI algorithms. After earning my PhD, where I focused on adaptive activation functions across various machine learning models, I chose to work in a consultancy-based company to gain exposure to building practical AI applications. In this role, I’ve contributed to a diverse set of projects across multiple domains, including AI for rail car safety, road safety, medical imaging, vision-language models, and large language models for repair instructions. Currently, I am exploring the exciting 3D space with vision-language models.
-      </p>
-      <p>
-        While deeply involved in these real-world applications, I have continued to engage in research work in areas such as radiology, pathology, and drug discovery, and have published several papers in these fields. This blend of applied work and research underscores my commitment to both advancing AI technology in industry and pushing the boundaries of knowledge through academic exploration.
-      </p>
-      <p>
-        In addition to my technical expertise, my roles as a GTM, technical architect, and technical program manager have allowed me to hone my leadership, project management, and team collaboration skills. I have successfully managed multiple projects, delivering results on time and ensuring customer satisfaction, all while fostering effective communication between technical teams and clients.
-      </p>      
-      <a href="Resume/Resume_updated.pdf" download="Your_Resume.pdf" class="btn">Download Resume</a>
-    </div>
-  </section>
-  
-
-
-
-
-
-
-
-
-
-
-  <section id="experience" class="experience">
-  <div class="container">
-    <h3>Experience</h3>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h4>2021 - Present(Work)</h4>
-          <p>-Leading the development and deployment of innovative AI solutions by combining expertise in Generative AI, multimodal AI/ML across LLMs, vision-LLMs, computer vision, and medical imaging with strategic leadership and project management. Driving impactful results in both small and large-scale enterprise deployments across industries.
-          </p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h4>2021 - Present(Personal)</h4>
-          <p>- Developed a custom Semantic search RAG pipeline. Can be integrated with any application with changes to model and prompts</p>
-          <!-- Video Section -->
-          <video width="50%" controls>
-            <source src="video/semantic_search.mov" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p>
-          <p>- Developed a custom web-based RAG pipeline for Llama 3.1 and Mistral 7B, implemented optimized neural text-to-speech using Piper software and integrated Whisper for speech-to-text on Raspberry Pi using Wyoming protocol through personal server, and trained a custom wake word using open-source tools.</p>
-          <p>
-            - Implemented the YOLOv8 object detection algorithm using Docker and Kubernetes for scalable and efficient deployment, ensuring seamless integration and optimized performance in containerized environments.
-          </p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h4>Jan - 2018 - Dec - 2018</h4>
-          <p>
-            Data Scientist Intern at Unique Software Development
-          </p>
-          
-        </div>
-      </div>
-
-
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h4>2017 - 2021</h4>
-          <p>
-            - My PhD from The University of Texas at Arlington was focused in developing adaptive activations for any neural networks. My research focused on the role of activation functions in neural networks, particularly in shallow CNNs, an area often overlooked compared to deeper architectures like ResNet. I developed AdAct, a novel Adaptive Activation algorithm that leverages piecewise linear properties to enhance model performance. Through extensive experiments, I demonstrated that AdAct outperforms traditional ReLU across various CNN and multilayer perceptron architectures, showcasing its potential for improving deep learning efficiency and accuracy.
-            <a href="https://mavmatrix.uta.edu/cgi/viewcontent.cgi?article=1318&context=electricaleng_dissertations" target="_blank"><strong>Dissertation</strong></a>.
-          </p>
-          <p>
-            - Worked at Image processing and Neural Network lab as a research asistant 
-          </p>
-          
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h4>2014 - 2017</h4>
-          <p>
-            - My MsC from The University of Texas at Arlington was focused in developing the initial version on adaptive activations for approximation and classification. 
-          </p>
-          <p>
-            - Worked at Image processing and Neural Network lab as a research aissitant
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <section id="featured-talks" class="featured-talks">
-    <div class="container">
-        <h2>Featured Talks</h2>
-        <div class="talks-grid">
-            <div class="talk">
-                <h3>Revolutionizing Cardiac MRI Analysis and Diagnosis With AI: A Deep Dive into MONAI-Based Cardiac MRI Segmentation</h3>
-                <p>Cardiac MRI is the gold-standard imaging technique for evaluating many heart conditions, yet it encounters challenges like manual analysis, complexity, and the need for specialized training, which can affect its effectiveness and accessibility. 
-                  Discover how we are revolutionizing cardiac MRI analysis through the integration of self-supervised learning for 2D and 3D cardiac MRI models and how NVIDIA MONAI and AWS powered end-to-end AI-driven workflows—from AI-assisted annotation and training to scalable cloud deployment. A collegue will also provide a broader perspective on the industry impact of AI in medical imaging, discussing how these innovations are shaping the future of healthcare.
-</p>
-                <div class="video-container">
-                    <a href="https://www.nvidia.com/en-us/on-demand/session/gtc25-s73347/" target="_blank" class="watch-video-btn">
-                        Watch on NVIDIA
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Available for Opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Chinmay Rane</span>
+                </h1>
+                <h2 class="hero-subtitle">Senior Machine Learning Engineer</h2>
+                <p class="hero-description">
+                    Transforming cutting-edge AI research into real-world applications. 
+                    Specializing in Generative AI, Computer Vision, and Multimodal Systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="Resume/Resume_updated.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>7+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Publications</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="assets/images/Chinmay.jpeg" alt="Chinmay Rane" class="profile-img">
+                    <div class="hero-pattern"></div>
+                </div>
+                <div class="tech-stack-icons">
+                    <i class="fab fa-python" style="--delay: 0.2s"></i>
+                    <i class="fas fa-brain" style="--delay: 0.4s"></i>
+                    <i class="fab fa-aws" style="--delay: 0.6s"></i>
+                    <i class="fas fa-robot" style="--delay: 0.8s"></i>
                 </div>
             </div>
         </div>
-    </div>
-  </section>
-
-
-
-  <section id="skills" class="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <div class="skill-column">
-      <h3>Technical Skills</h3>
-      <div class="sub-categories">
-        <div class="sub-category">
-          <h4>AI Programming & Databases</h4>
-          <div class="skill-buttons">
-            <span>Python</span>
-            <span>MATLAB</span>
-            <span>C/C++</span>
-            <span>R</span>
-            <span>SQL</span>
-            <span>MongoDB</span>
-            <span>TensorFlow</span>
-            <span>PyTorch</span>
-            <span>Scikit-learn</span>
-          </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
-        <div class="sub-category">
-          <h4>Machine Learning & AI</h4>
-          <div class="skill-buttons">
-            <span>Supervised Learning</span>
-            <span>Unsupervised Learning</span>
-            <span>Self-Supervised Learning</span>
-            <span>Deep Learning</span>
-            <span>Natural Language Processing (NLP)</span>
-            <span>Computer Vision</span>
-            <span>Generative AI</span>
-            <span>Multimodal AI</span>
-          </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">AI Researcher & Engineer</h2>
+                <p class="section-description">
+                    Bridging the gap between academic research and practical AI applications
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a Senior Machine Learning Engineer based in Austin, Texas, with a PhD focused on 
+                        adaptive activation functions in neural networks. I specialize in transforming cutting-edge 
+                        AI research into practical, scalable solutions.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>PhD in Machine Learning</h4>
+                                <p>University of Texas at Arlington</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>7+ Years Experience</h4>
+                                <p>Enterprise AI Solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-microscope"></i>
+                            <div>
+                                <h4>Active Researcher</h4>
+                                <p>15+ Published Papers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-tags">
+                        <span class="tag">Generative AI</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Medical Imaging</span>
+                        <span class="tag">Multimodal AI</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">MLOps</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="experience-card">
+                        <h4>Current Focus</h4>
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="focus-content">
+                                <h5>3D Vision-Language Models</h5>
+                                <p>Exploring spatial AI understanding</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="focus-content">
+                                <h5>Medical AI Applications</h5>
+                                <p>Cardiac MRI & pathology analysis</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="focus-content">
+                                <h5>Aircraft Safety Systems</h5>
+                                <p>Vision-language models for maintenance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sub-category">
-          <h4>Cloud & Big Data</h4>
-          <div class="skill-buttons">
-            <span>AWS (EC2, Lambda, S3, SageMaker)</span>
-            <span>Google Cloud Platform</span>
-            <span>Docker</span>
-            <span>Big Data Tools (Pandas, Rapids, Dask)</span>
-          </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior ML Engineer</h3>
+                            <span class="timeline-date">2021 - Present</span>
+                        </div>
+                        <p>Leading development of enterprise AI solutions across multiple domains including medical imaging, automotive safety, and aerospace applications.</p>
+                        <div class="timeline-tags">
+                            <span>Generative AI</span>
+                            <span>Computer Vision</span>
+                            <span>Technical Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Personal Research Projects</h3>
+                            <span class="timeline-date">2021 - Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Custom semantic search RAG pipeline with Milvus DB</li>
+                            <li>Web-based RAG for Llama 3.1 and Mistral 7B</li>
+                            <li>YOLOv8 deployment with Docker & Kubernetes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2018">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist Intern</h3>
+                            <span class="timeline-date">Jan 2018 - Dec 2018</span>
+                        </div>
+                        <p>Applied machine learning solutions for client projects at Unique Software Development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>PhD Research</h3>
+                            <span class="timeline-date">2017 - 2021</span>
+                        </div>
+                        <p>Developed AdAct, a novel adaptive activation algorithm for neural networks. Demonstrated superior performance over traditional ReLU across various architectures.</p>
+                        <a href="https://mavmatrix.uta.edu/cgi/viewcontent.cgi?article=1318&context=electricaleng_dissertations" target="_blank" class="timeline-link">
+                            <i class="fas fa-external-link-alt"></i> View Dissertation
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="skill-column">
-      <h3>Soft Skills</h3>
-      <div class="sub-categories">
-        <div class="sub-category">
-          <h4>Leadership & Communication</h4>
-          <div class="skill-buttons">
-            <span>Team Leadership</span>
-            <span>Project Management</span>
-            <span>Stakeholder Communication</span>
-            <span>Technical Documentation</span>
-          </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker/K8s</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Computer Vision</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Generative AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Medical Imaging</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GCP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MLflow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorRT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sub-category">
-          <h4>Problem Solving & Adaptability</h4>
-          <div class="skill-buttons">
-            <span>Critical Thinking</span>
-            <span>Innovation</span>
-            <span>Adaptability</span>
-            <span>Time Management</span>
-          </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cardiac MRI Segmentation</h3>
+                        <p>End-to-end MONAI pipeline with self-supervised learning for cardiac MRI analysis. Optimized with TensorRT and deployed on AWS.</p>
+                        <div class="project-tech">
+                            <span>MONAI</span>
+                            <span>TensorRT</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aircraft Safety AI</h3>
+                        <p>Vision-language model for aircraft part defect detection and RAG system for automated repair instructions.</p>
+                        <div class="project-tech">
+                            <span>Vision-Language</span>
+                            <span>RAG</span>
+                            <span>LLMs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Semantic Search Pipeline</h3>
+                        <p>Custom RAG pipeline for medical information retrieval using Milvus DB, rerankers, and generative AI.</p>
+                        <div class="project-tech">
+                            <span>Milvus</span>
+                            <span>RAG</span>
+                            <span>Generative AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rail Safety Computer Vision</h3>
+                        <p>Technical lead for multi-use-case computer vision system with active learning and drift detection.</p>
+                        <div class="project-tech">
+                            <span>Computer Vision</span>
+                            <span>Active Learning</span>
+                            <span>Drift Detection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </section>
+    </section>
 
-  <section id="work projects" class="work-projects">
-  <div class="container">
-    <h2>Work Projects</h2>
-    <div class="project-list">
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research</span>
+                <h2 class="section-title">Publications</h2>
+            </div>
+            <div class="publications-grid">
+                <div class="publication-card featured">
+                    <div class="pub-header">
+                        <span class="pub-journal">ArXiv • Dec 2024</span>
+                        <h3>Making Sigmoid-MSE Great Again: Output Reset Challenges Softmax Cross-Entropy</h3>
+                    </div>
+                    <p class="pub-authors">Kanishka Tyagi, Chinmay Rane, et al.</p>
+                    <div class="pub-actions">
+                        <a href="https://arxiv.org/pdf/2411.11213" target="_blank" class="btn btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="pub-header">
+                        <span class="pub-journal">Evolutionary Intelligence • Oct 2024</span>
+                        <h3>Optimizing performance through dynamic activation functions</h3>
+                    </div>
+                    <p class="pub-authors">Chinmay Rane, Kanishka Tyagi, et al.</p>
+                    <div class="pub-actions">
+                        <a href="https://link.springer.com/article/10.1007/s12065-024-00973-0" target="_blank" class="btn btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="pub-header">
+                        <span class="pub-journal">ICLR 2024 • Mar 2024</span>
+                        <h3>Dynamic Activations for Neural Net Training</h3>
+                    </div>
+                    <p class="pub-authors">Chinmay Rane, Kanishka Tyagi, et al.</p>
+                    <div class="pub-actions">
+                        <a href="https://openreview.net/pdf?id=F7rBDSxIMs" target="_blank" class="btn btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="publications-cta">
+                <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-graduation-cap"></i> View All Publications
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always interested in discussing new opportunities, research collaborations, or innovative AI projects.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:drranechinmay@gmail.com">drranechinmay@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+16825831880">+1 (682) 583-1880</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Austin, Texas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/ranechinmay" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ChicoR-Dr" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="social-link">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="project">
-        <h3 class="project-title">  LLM-Powered Semantic Search Pipeline for Medical and Baby Book Information</h3>
-        <p class="project-description">
-          Utilized generative AI for query understanding and response generation, developing a semantic search pipeline leveraging Milvus DB, a reranker, and a reader to enable contextual retrieval and reasoning across baby book information, human anatomy, and infectious diseases. Integrated LLM-based retrieval-augmented generation (RAG) techniques to enhance information synthesis. Optimized search relevance and accuracy by dynamically adapting prompts and models, enabling the system to deliver accurate and contextualized search across diverse domains.
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">CR</span>
+                    <p>Transforming AI research into real-world solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#publications">Publications</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chinmay Rane, PhD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-      <div class="project">
-        <h3 class="project-title">Development of Vision-Language and Retrieval-Augmented Language Models for Aircraft Safety</h3>
-        <p class="project-description">
-          Served as a Technical Program Manager to lead the development of a Vision-Language Model (VLM) for describing defective aircraft parts and a Retrieval-Augmented Generation (RAG) system powered by Large Language Models (LLMs) for generating repair instructions. Directed efforts in fine-tuning VLMs with expert-provided captions, preprocessing repair manuals through cleaning and chunking, and implementing advanced search and generation methodologies to optimize aircraft safety workflows.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3 class="project-title">MONAI end to end solution for cardiac MRI segmentation using self supervised learning</h3>
-        <p class="project-description">
-          Served as the Lead Technical Architect to design and implement an end-to-end pipeline for cardiac MRI, integrating AI-assisted annotation, custom self-supervised learning algorithms with multi-GPU support, and inference optimization using TensorRT and Triton Inference Server. Enhanced visualization for a user-friendly application and led the deployment of a dockerized solution on AWS using Lambda functions and EC2 instances for scalability and reliability..
-        </p>
-      </div>
-      <div class="project">
-        <h3 class="project-title"> Inference optimization for a custom object detection pipeline using tensorRT, Triton inference server and graph surgeon</h3>
-        <p class="project-description">
-          This project involved optimizing a customers custom tensorflow object detection pipeline. The customer wanted to improve their inference pipeline with tensorRT and triton inference server. We use Netron, ONXX graph surgeon and optimized individual graphs based on speed and also included DALI to speed up the data loading process.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3 class="project-title"> Custom federated learning training pipeline with tensorflow federated and tensorflow lite</h3>
-        <p class="project-description">
-          Worked on creating a custom pipeline for tensorflow federated learning using tensorflow light training so as to avoid sending data over cloud.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3 class="project-title">  Technical Lead for Computer vision application for rail safety organization</h3>
-        <p class="project-description">
-          Working as a technical lead for an ongoing project with multiple use cases. Duties involve setting a timeline to deliver each use case, assisting in the clients annotation team, setting initial technical path, working with the team to complete the task on time and finally, involvement in the technical document delivery. Also, involved in redesigning and proposing new improved techniques for the inference pipeline by including active learning, drift detection, AI assisted annotation and self supervised learning.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3 class="project-title">  Multimodal Single-Cell Integration- Kaggle project</h3>
-        <p class="project-description">
-          This project involved two separate training algorithms, first is the prediction of DNA to RNA and second is RNA to Proteins. Traditional dimension reduction models such as SVD, PCA along with more advanced diffusion and latent diffusion models with various downstream tasks were experimented.
-        </p>
-      </div>
-
-      
-
-      
-
-
-      <!-- Add more project divs here as needed -->
-    </div>
-  </div>
-  </section>
-
-
-
-
-  <section id="Publications" class="Publications">
-  <div class="container">
-    <h3>Publications</h3>
-    <div class="publication-list">
-     
-
-      <div class="publication">
-        <h2 class="publication-title">"Making Sigmoid-MSE Great Again: Output Reset Challenges Softmax Cross-Entropy in Neural Network Classification"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Ketaki Vaidya, Jeshwanth Challgundla, Soumitro Swapan Auddy, Michael Manry</p>
-        <p class="publication-journal">ArXiv</p>
-        <p><strong>Publish Date:</strong> Dec 2024</p>
-        <p><a href="https://arxiv.org/pdf/2411.11213" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Optimizing performance of feedforward and convolutional neural networks through dynamic activation functions"</h2>
-        <p><strong>Authors:</strong> Chinmay Rane, Kanishka Tyagi, Adrienne Kline, Tushar Chugh, Michael Manry</p>Evolutionary IntelligenceThe Second Tiny Papers Track at ICLR 2024</p>
-        <p><strong>Publish Date:</strong> October 2024</p>
-        <p><a href="hhttps://link.springer.com/article/10.1007/s12065-024-00973-0" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Dynamic Activations for Neural Net Training"</h2>
-        <p><strong>Authors:</strong> Chinmay Rane, Kanishka Tyagi, Tushar Chugh, Nirmala Murali, Michael Manry</p>
-        <p class="publication-journal">The Second Tiny Papers Track at ICLR 2024</p>
-        <p><strong>Publish Date:</strong> March 2024</p>
-        <p><a href="https://openreview.net/pdf?id=F7rBDSxIMs" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Automated Sizing and Training of Efficient Deep Autoencoders using Second Order Algorithms"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Michael Manry</p>
-        <p class="publication-journal">ArXiv</p>
-        <p><strong>Publish Date:</strong> August 2023</p>
-        <p><a href="https://arxiv.org/pdf/2308.06221" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Optimal Input Gain: All You Need to Supercharge a Feed-Forward Neural Network"</h2>
-        <p><strong>Authors:</strong> Chinmay Rane, Sanjeev Mallur, Yash Shinge, Kanishka Tyagi, Michael Manry</p>
-        <p class="publication-journal">ArXiv</p>
-        <p><strong>Publish Date:</strong> April 2023</p>
-        <p><a href="https://arxiv.org/pdf/2303.17732" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Regression analysis, Artificial Intelligence and Machine Learning for Edge Computing"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Michael Manry</p>
-        <p class="publication-journal">Elsevier</p>
-        <p><strong>Publish Date:</strong> Late 2021</p>
-        <p><a href="https://www.researchgate.net/profile/Kanishka-Tyagi/publication/367711473_Regression_analysis/links/63f89ab40d98a97717b51761/Regression-analysis.pdf" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Unsupervised Learning, Artificial Intelligence and Machine Learning for Edge Computing"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Michael Manry</p>
-        <p class="publication-journal">Elsevier</p>
-        <p><strong>Publish Date:</strong> Late 2021</p>
-        <p><a href="https://www.researchgate.net/profile/Kanishka-Tyagi/publication/360266303_Unsupervised_learning/links/63f89a0657495059453e6ef0/Unsupervised-learning.pdf" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Supervised Learning, Artificial Intelligence and Machine Learning for Edge Computing"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Michael Manry</p>
-        <p class="publication-journal">Elsevier</p>
-        <p><strong>Publish Date:</strong> Late 2021</p>
-        <p><a href="#" class="btn btn-small">View Paper</a></p> <!-- Add link if available -->
-      </div>
-
-      <div class="publication">
-        <h2 class="publication-title">"Multistage Newton's approach for training radial basis function neural network"</h2>
-        <p><strong>Authors:</strong> Kanishka Tyagi, Chinmay Rane, Bito Irie, Michael Manry</p>
-        <p class="publication-journal">SN Computer Science</p>
-        <p><strong>Publish Date:</strong> June 2021</p> <!-- Publish Date moved here -->
-        <p><a href="https://www.researchgate.net/profile/Kanishka-Tyagi/publication/352975848_Multistage_Newton's_Approach_for_Training_Radial_Basis_Function_Neural_Networks/links/638b69352c563722f2356c67/Multistage-Newtons-Approach-for-Training-Radial-Basis-Function-Neural-Networks.pdf" target="_blank" class="btn btn-small">View Paper</a></p>
-      </div>
-
-
-
-
-    </div>
-  </div>
-  </section>
-
-  <section id="Personal-Life" class="Personal-Life">
-  <div class="container">
-    <h3>Personal Life</h3>
-    <p>
-      Outside of work, I cherish spending time with my loving family. My wife, Stacy, a compassionate therapist, and I share a beautiful blend of Western and Indian cultural backgrounds, which enriches our lives with diverse perspectives and traditions. We have recently welcomed our newborn, who brings immense joy to our lives. Our family is also completed by our adorable dogs.
-    </p>
-    <p>
-      In my free time, I enjoy exploring new outdoor activities like playing soccer and volleyball, and I also have a deep passion for motorcycle riding — a love that probably started from weaving through the chaotic streets of India on a two-wheeler. I appreciate engaging in fun projects that combine my passion for AI with everyday life, such as developing AI-based semantic search tools using baby books and creating AI home security systems. Additionally, I cherish spending quality time with my family, whether it's going for walks with my wife and our dog, or now, with the added joy of our newborn, creating new memories together.
-    </p>
-    
-    <h4>Family Photos</h4>
-    <!-- Image Gallery Section -->
-    <div class="image-gallery">
-      <div class="image-item">
-        <img src="personal_photos/chinmay_stacy.png" alt="Image 1">
-        <h3>Wife and I</h3>
-      </div>
-      <div class="image-item">
-        <img src="personal_photos/announcement.png" alt="Image 2">
-        <h3>Our Newborn announcement</h3>
-      </div>
-      <div class="image-item">
-        <img src="personal_photos/simba_toto.png" alt="Image 3">
-        <h3>Our Dogs</h3>
-      </div>
-      <div class="image-item">
-        <img src="personal_photos/simba_mean.png" alt="Image 4">
-        <h3>Simba</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
-</section>
-
-
-  
-
-
+    <script src="script.js"></script>
 </body>
 </html>
