@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay Rane, PhD — Associate_Technical Architect</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* ── Hero ── */
+    .hero {
+      min-height: calc(100vh - 64px);
+      background: var(--bg);
+      display: grid; grid-template-columns: 1fr 400px;
+      gap: 80px; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -150px; right: -150px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(184,106,48,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 1px; background: linear-gradient(90deg, transparent, var(--copper-bd), transparent);
+    }
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--copper); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--copper); }
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 6.5vw, 82px); font-weight: 300;
+      color: var(--text); line-height: 1.02; margin-bottom: 10px;
+    }
+    .hero-role {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(20px, 2.5vw, 28px); font-weight: 300;
+      font-style: italic; color: var(--copper-lt); margin-bottom: 28px;
+    }
+    .hero-bio {
+      font-size: 15px; color: var(--text-mid); line-height: 1.8;
+      font-weight: 300; max-width: 480px; margin-bottom: 40px;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+    .hero-stats {
+      display: flex; gap: 48px;
+      border-top: 1px solid var(--border); padding-top: 32px;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px; font-weight: 300; color: var(--copper-lt); line-height: 1;
+    }
+    .stat-label {
+      font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--text-light); margin-top: 5px;
+    }
+
+    /* Hero panel */
+    .hero-panel {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-top: 2px solid var(--copper); overflow: hidden;
+    }
+    .panel-photo { width: 100%; height: 280px; overflow: hidden; position: relative; }
+    .panel-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .panel-photo::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 60px; background: linear-gradient(transparent, var(--bg-card));
+    }
+    .panel-info { padding: 20px 24px 24px; }
+    .panel-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 4px;
+    }
+    .panel-role-txt {
+      font-family: 'DM Mono', monospace; font-size: 9px;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--copper); margin-bottom: 20px;
+    }
+    .panel-details { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    .pd-item { display: flex; align-items: center; gap: 10px; }
+    .pd-icon {
+      width: 28px; height: 28px; background: var(--copper-dim);
+      border: 1px solid var(--copper-bd);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--copper); flex-shrink: 0;
+    }
+    .pd-text { font-size: 12px; color: var(--text-mid); }
+    .panel-social { display: flex; gap: 8px; }
+    .ps-btn {
+      flex: 1; height: 34px; background: var(--bg-2); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-mid); text-decoration: none; font-size: 13px; transition: all 0.2s;
+    }
+    .ps-btn:hover { border-color: var(--copper); color: var(--copper); }
+
+    /* About strip */
+    .about-strip { background: var(--bg-2); border-top: 1px solid var(--border); padding: 80px 0; }
+    .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: start; }
+    .about-text p { font-size: 15px; color: var(--text-mid); line-height: 1.85; font-weight: 300; margin-bottom: 18px; }
+    .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .focus-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 2px solid var(--copper); padding: 28px; }
+    .focus-card h4 {
+      font-family: 'Cormorant Garamond', serif; font-size: 18px;
+      font-weight: 400; color: var(--text); margin-bottom: 20px;
+      padding-bottom: 14px; border-bottom: 1px solid var(--border);
+    }
+    .focus-item { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .focus-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .focus-icon {
+      width: 32px; height: 32px; background: var(--copper-dim); border: 1px solid var(--copper-bd);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--copper); font-size: 12px; flex-shrink: 0;
+    }
+    .focus-item h5 { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+    .focus-item p { font-size: 12px; color: var(--text-light); }
+
+    /* CTA strip */
+    .cta-strip { background: var(--bg-3); border-top: 1px solid var(--border); padding: 60px 0; }
+    .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .cta-text h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 6px; }
+    .cta-text p { font-size: 14px; color: var(--text-mid); font-weight: 300; }
+    .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; padding: 60px 0 40px; }
+      .hero-panel { display: none; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .cta-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">C · R</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero container" style="padding-top:0;padding-bottom:0">
+    <div>
+      <div class="hero-eyebrow">Associate_Technical Architect · Austin, TX</div>
+      <h1 class="hero-name">Chinmay<br>Rane</h1>
+      <div class="hero-role">PhD · Machine Learning</div>
+      <p class="hero-bio">Transforming cutting-edge AI research into real-world applications. Specialising in Generative AI, Computer Vision, and Multimodal Systems across medical, aerospace, and industrial domains.</p>
+      <div class="hero-btns">
+        <a href="projects.html" class="btn-copper">View My Work</a>
+        <a href="Resume/Resume_updated.pdf" class="btn-ghost" download><i class="fas fa-download" style="margin-right:7px;font-size:11px"></i>Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">7+</div><div class="stat-label">Years</div></div>
+        <div><div class="stat-num">15+</div><div class="stat-label">Publications</div></div>
+        <div><div class="stat-num">20+</div><div class="stat-label">Projects</div></div>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="panel-photo"><img src="assets/images/Chinmay.jpeg" alt="Chinmay Rane"></div>
+      <div class="panel-info">
+        <div class="panel-name">Chinmay Rane, PhD</div>
+        <div class="panel-role-txt">Senior ML Engineer</div>
+        <div class="panel-details">
+          <div class="pd-item"><div class="pd-icon"><i class="fas fa-map-marker-alt"></i></div><div class="pd-text">Austin, Texas</div></div>
+          <div class="pd-item"><div class="pd-icon"><i class="fas fa-graduation-cap"></i></div><div class="pd-text">PhD · UT Arlington</div></div>
+          <div class="pd-item"><div class="pd-icon"><i class="fas fa-envelope"></i></div><div class="pd-text">drranechinmay@gmail.com</div></div>
+        </div>
+        <div class="panel-social">
+          <a href="https://linkedin.com/in/ranechinmay" target="_blank" class="ps-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ChicoR-Dr" target="_blank" class="ps-btn"><i class="fab fa-github"></i></a>
+          <a href="https://scholar.google.com" target="_blank" class="ps-btn"><i class="fas fa-graduation-cap"></i></a>
+          <a href="mailto:drranechinmay@gmail.com" class="ps-btn"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <div class="about-strip">
+    <div class="container">
+      <div class="eyebrow">About Me</div>
+      <h2 class="section-title">AI Researcher &amp; <em>Engineer</em></h2>
+      <div class="cu-line"></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Senior Machine Learning Engineer with a PhD focused on adaptive activation functions in neural networks. Based in Austin, Texas, I specialise in transforming cutting-edge AI research into practical, scalable solutions.</p>
+          <p>My work spans medical imaging, aerospace safety systems, industrial computer vision, and natural language processing — with a consistent focus on getting models from research to production reliably and at scale.</p>
+          <p>Outside of professional work I build personal AI systems — including a fully offline home AI assistant running entirely on local hardware with no cloud dependencies.</p>
+          <div class="about-tags">
+            <span class="tag">Generative AI</span><span class="tag">Computer Vision</span>
+            <span class="tag">Medical Imaging</span><span class="tag">LLMs</span>
+            <span class="tag">MLOps</span><span class="tag">Edge AI</span>
+          </div>
+        </div>
+        <div class="focus-card">
+          <h4>Current Focus Areas</h4>
+          <div class="focus-item"><div class="focus-icon"><i class="fas fa-cube"></i></div><div><h5>3D Vision-Language Models</h5><p>Exploring spatial AI understanding</p></div></div>
+          <div class="focus-item"><div class="focus-icon"><i class="fas fa-heartbeat"></i></div><div><h5>Medical AI</h5><p>Cardiac MRI &amp; pathology analysis</p></div></div>
+          <div class="focus-item"><div class="focus-icon"><i class="fas fa-plane"></i></div><div><h5>Aircraft Safety</h5><p>Vision-language for maintenance</p></div></div>
+          <div class="focus-item"><div class="focus-icon"><i class="fas fa-microchip"></i></div><div><h5>Local AI Systems</h5><p>Offline AI on home hardware</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-strip">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Explore my work in detail</h2>
+        <p>Projects, publications, experience, and more across separate pages.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="projects.html" class="btn-copper">View Projects</a>
+        <a href="publications.html" class="btn-ghost">Research</a>
+        <a href="contact.html" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-logo">C · R</a>
+    <p>&copy; 2025 Chinmay Rane, PhD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Research</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

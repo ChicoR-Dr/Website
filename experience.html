@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience — Chinmay Rane</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Timeline */
+    .tl-section { background: var(--bg); }
+    .timeline { position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--border); }
+    .tl-item { padding-left: 44px; margin-bottom: 48px; position: relative; }
+    .tl-dot { position: absolute; left: -6px; top: 6px; width: 13px; height: 13px; background: var(--copper); border: 2px solid var(--bg); border-radius: 50%; }
+    .tl-date { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--copper); margin-bottom: 6px; }
+    .tl-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+    .tl-org { font-size: 13px; color: var(--text-light); margin-bottom: 12px; font-weight: 300; }
+    .tl-body { font-size: 14px; color: var(--text-mid); line-height: 1.8; font-weight: 300; }
+    .tl-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .tl-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--copper); text-decoration: none; border-bottom: 1px solid var(--copper-bd); padding-bottom: 1px; margin-top: 12px; transition: color 0.2s; }
+    .tl-link:hover { color: var(--copper-lt); }
+
+    /* Skills */
+    .skills-section { background: var(--bg-2); border-top: 1px solid var(--border); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); }
+    .skill-cat { background: var(--bg-card); padding: 32px 28px; }
+    .skill-cat-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 20px;
+      font-weight: 400; color: var(--copper-lt); margin-bottom: 24px;
+      padding-bottom: 14px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .skill-cat-title i { font-size: 15px; color: var(--copper); }
+    .skill-item { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid rgba(62,39,35,0.06); }
+    .skill-item:last-child { border-bottom: none; }
+    .skill-name { font-size: 13px; color: var(--text-mid); }
+    .dots { display: flex; gap: 5px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--bg-2); border: 1px solid var(--border); }
+    .dot.on { background: var(--copper); border-color: var(--copper); }
+
+    @media (max-width: 768px) { .skills-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">C · R</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="inner">
+      <div class="eyebrow">Career</div>
+      <h1>Professional <em>Journey</em></h1>
+      <p>7+ years building AI systems from research through production — across medical, aerospace, and industrial domains.</p>
+    </div>
+  </div>
+
+  <section class="tl-section">
+    <div class="container">
+      <div class="eyebrow">Work History</div>
+      <h2 class="section-title">Experience <em>Timeline</em></h2>
+      <div class="cu-line"></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2021 — Present</div>
+          <div class="tl-title">Senior ML Engineer</div>
+          <div class="tl-org">Austin, Texas</div>
+          <div class="tl-body">Leading development of enterprise AI solutions across medical imaging, automotive safety, and aerospace applications. Technical lead on multi-stakeholder projects from research through production deployment. Responsible for architecture decisions, team mentorship, and stakeholder communication.</div>
+          <div class="tl-tags">
+            <span class="tag-mono">Generative AI</span><span class="tag-mono">Computer Vision</span>
+            <span class="tag-mono">Technical Leadership</span><span class="tag-mono">MLOps</span>
+            <span class="tag-mono">PyTorch</span><span class="tag-mono">AWS</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2021 — Present</div>
+          <div class="tl-title">Personal Research Projects</div>
+          <div class="tl-org">Independent</div>
+          <div class="tl-body">Custom semantic search RAG pipeline with Milvus DB · Web-based RAG for Llama 3.1 and Mistral 7B · YOLOv8 deployment with Docker &amp; Kubernetes · Local AI assistant on home hardware (Project C).</div>
+          <div class="tl-tags">
+            <span class="tag-mono">RAG</span><span class="tag-mono">Milvus</span>
+            <span class="tag-mono">YOLOv8</span><span class="tag-mono">Local LLMs</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2017 — 2021</div>
+          <div class="tl-title">PhD Researcher</div>
+          <div class="tl-org">University of Texas at Arlington</div>
+          <div class="tl-body">Developed AdAct, a novel adaptive activation algorithm for neural networks. Demonstrated superior performance over traditional ReLU across multiple architectures including CNNs, RNNs, and Transformers. Graduated with distinction and published 15+ papers across top ML venues including ICLR, Evolutionary Intelligence, and ArXiv.</div>
+          <a href="https://mavmatrix.uta.edu/cgi/viewcontent.cgi?article=1318&context=electricaleng_dissertations" target="_blank" class="tl-link">
+            <i class="fas fa-external-link-alt" style="font-size:10px"></i> View Dissertation
+          </a>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Jan — Dec 2018</div>
+          <div class="tl-title">Data Scientist Intern</div>
+          <div class="tl-org">Unique Software Development</div>
+          <div class="tl-body">Applied machine learning solutions for client projects across data analysis, predictive modelling, and automated reporting pipelines. Worked on NLP and time-series forecasting use cases.</div>
+          <div class="tl-tags">
+            <span class="tag-mono">Python</span><span class="tag-mono">Scikit-learn</span>
+            <span class="tag-mono">NLP</span><span class="tag-mono">Time Series</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section">
+    <div class="container">
+      <div class="eyebrow">Expertise</div>
+      <h2 class="section-title">Technical <em>Skills</em></h2>
+      <div class="cu-line"></div>
+      <div class="skills-grid">
+        <div class="skill-cat">
+          <div class="skill-cat-title"><i class="fas fa-code"></i> Programming</div>
+          <div class="skill-item"><span class="skill-name">Python</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+          <div class="skill-item"><span class="skill-name">PyTorch</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+          <div class="skill-item"><span class="skill-name">TensorFlow</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">FastAPI</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Docker / K8s</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title"><i class="fas fa-brain"></i> ML &amp; AI</div>
+          <div class="skill-item"><span class="skill-name">Computer Vision</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Generative AI</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+          <div class="skill-item"><span class="skill-name">NLP / LLMs</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Medical Imaging</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">RAG Pipelines</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat-title"><i class="fas fa-cloud"></i> Infrastructure</div>
+          <div class="skill-item"><span class="skill-name">AWS</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">TensorRT</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">MLflow</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Ollama / Local LLMs</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+          <div class="skill-item"><span class="skill-name">ChromaDB / Milvus</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-logo">C · R</a>
+    <p>&copy; 2025 Chinmay Rane, PhD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="projects.html">Projects</a>
+      <a href="publications.html">Research</a><a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

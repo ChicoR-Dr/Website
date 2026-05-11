@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Chinmay Rane</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .projects-section { background: var(--bg); }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .project-card { background: var(--bg-card); border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.3s, transform 0.2s; }
+    .project-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+    .project-card.featured { grid-column: 1 / -1; }
+    .proj-header { padding: 24px 28px; border-bottom: 1px solid var(--border); background: var(--bg-2); display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+    .proj-badge { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; background: var(--copper-dim); border: 1px solid var(--copper-bd); color: var(--copper); padding: 3px 10px; display: inline-block; margin-bottom: 10px; }
+    .proj-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--text); margin-bottom: 5px; }
+    .proj-header p { font-size: 12px; color: var(--text-light); }
+    .proj-icon { width: 44px; height: 44px; background: var(--copper-dim); border: 1px solid var(--copper-bd); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .proj-body { padding: 24px 28px; }
+    .proj-desc { font-size: 14px; color: var(--text-mid); line-height: 1.75; font-weight: 300; margin-bottom: 20px; }
+    .proj-tech { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    /* Project C special */
+    .section-sub { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); margin-bottom: 10px; }
+    .pc-hw { display: flex; gap: 2px; background: var(--border); margin-bottom: 20px; }
+    .pc-hw-item { flex: 1; background: var(--bg); padding: 14px 12px; text-align: center; }
+    .hw-e { font-size: 18px; margin-bottom: 5px; }
+    .hw-n { font-size: 11px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+    .hw-r { font-size: 10px; color: var(--text-light); }
+    .pc-feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); margin-bottom: 20px; }
+    .pc-feat { background: var(--bg-2); padding: 16px; }
+    .pc-feat-icon { font-size: 16px; margin-bottom: 6px; }
+    .pc-feat-title { font-size: 11px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
+    .pc-feat-desc { font-size: 10px; color: var(--text-light); line-height: 1.4; }
+
+    @media (max-width: 768px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-card.featured { grid-column: auto; }
+      .pc-feats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">C · R</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="inner">
+      <div class="eyebrow">Work</div>
+      <h1>Featured <em>Projects</em></h1>
+      <p>A selection of professional and personal projects spanning medical AI, aerospace, industrial CV, and home automation.</p>
+    </div>
+  </div>
+
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- Project C -->
+        <div class="project-card featured">
+          <div class="proj-header">
+            <div>
+              <div class="proj-badge">Personal Build · In Progress</div>
+              <h3>Project C — Home AI Assistant</h3>
+              <p>Fully offline personal AI — no cloud, no API keys, no subscriptions. Under £3/month power cost.</p>
+            </div>
+            <div class="proj-icon">🤖</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-desc">A multi-device AI system running entirely on home hardware. Wakes on voice, recognises faces, holds natural conversations, manages tasks and reminders across sessions — with persistent memory that survives reboots.</p>
+            <div class="section-sub">Hardware</div>
+            <div class="pc-hw">
+              <div class="pc-hw-item"><div class="hw-e">🍓</div><div class="hw-n">Raspberry Pi 4</div><div class="hw-r">Always-on · &lt;5W</div></div>
+              <div class="pc-hw-item"><div class="hw-e">🖥️</div><div class="hw-n">GPU Server</div><div class="hw-r">RTX 4060 Ti · LLM</div></div>
+              <div class="pc-hw-item"><div class="hw-e">📷</div><div class="hw-n">Tapo Camera</div><div class="hw-r">Presence detection</div></div>
+            </div>
+            <div class="section-sub">Capabilities</div>
+            <div class="pc-feats">
+              <div class="pc-feat"><div class="pc-feat-icon">🎙️</div><div class="pc-feat-title">Custom Wake Word</div><div class="pc-feat-desc">"Hey C" — trained locally</div></div>
+              <div class="pc-feat"><div class="pc-feat-icon">👁️</div><div class="pc-feat-title">Face Recognition</div><div class="pc-feat-desc">Real-time speaker ID</div></div>
+              <div class="pc-feat"><div class="pc-feat-icon">💬</div><div class="pc-feat-title">Natural Conversation</div><div class="pc-feat-desc">Qwen3 14B via Ollama</div></div>
+              <div class="pc-feat"><div class="pc-feat-icon">📋</div><div class="pc-feat-title">Task Management</div><div class="pc-feat-desc">Cross-session backlog</div></div>
+              <div class="pc-feat"><div class="pc-feat-icon">🧠</div><div class="pc-feat-title">Persistent Memory</div><div class="pc-feat-desc">ChromaDB semantic store</div></div>
+              <div class="pc-feat"><div class="pc-feat-icon">⚡</div><div class="pc-feat-title">Wake-on-LAN</div><div class="pc-feat-desc">GPU sleeps until needed</div></div>
+            </div>
+            <div class="proj-tech">
+              <span class="tag-mono">Python</span><span class="tag-mono">FastAPI</span>
+              <span class="tag-mono">Ollama</span><span class="tag-mono">ChromaDB</span>
+              <span class="tag-mono">faster-whisper</span><span class="tag-mono">Piper TTS</span>
+              <span class="tag-mono">openWakeWord</span><span class="tag-mono">OpenCV</span>
+              <span class="tag-mono">WebSockets</span><span class="tag-mono">systemd</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-header">
+            <div><div class="proj-badge">Medical AI</div><h3>Cardiac MRI Segmentation</h3><p>MONAI pipeline with self-supervised learning</p></div>
+            <div class="proj-icon">❤️</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-desc">End-to-end cardiac MRI analysis with self-supervised pre-training. Optimised with TensorRT and deployed on AWS for clinical throughput.</p>
+            <div class="proj-tech"><span class="tag-mono">MONAI</span><span class="tag-mono">TensorRT</span><span class="tag-mono">AWS</span><span class="tag-mono">PyTorch</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-header">
+            <div><div class="proj-badge">Aerospace</div><h3>Aircraft Safety AI</h3><p>Vision-language model for defect detection</p></div>
+            <div class="proj-icon">✈️</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-desc">Vision-language model for aircraft part defect detection with RAG system for automated maintenance instruction retrieval and reporting.</p>
+            <div class="proj-tech"><span class="tag-mono">Vision-Language</span><span class="tag-mono">RAG</span><span class="tag-mono">LLMs</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-header">
+            <div><div class="proj-badge">Industrial CV</div><h3>Rail Safety Vision</h3><p>Multi-use-case CV with active learning</p></div>
+            <div class="proj-icon">🚂</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-desc">Technical lead on multi-use-case computer vision for rail infrastructure safety. Active learning loop and drift detection for continuous model improvement.</p>
+            <div class="proj-tech"><span class="tag-mono">Computer Vision</span><span class="tag-mono">Active Learning</span><span class="tag-mono">Drift Detection</span></div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="proj-header">
+            <div><div class="proj-badge">NLP · RAG</div><h3>Semantic Search Pipeline</h3><p>Medical information retrieval at scale</p></div>
+            <div class="proj-icon">🔍</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-desc">Custom RAG pipeline for medical information retrieval using Milvus vector DB, cross-encoder rerankers, and generative AI response synthesis.</p>
+            <div class="proj-tech"><span class="tag-mono">Milvus</span><span class="tag-mono">RAG</span><span class="tag-mono">Rerankers</span><span class="tag-mono">Generative AI</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-logo">C · R</a>
+    <p>&copy; 2025 Chinmay Rane, PhD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="experience.html">Experience</a>
+      <a href="publications.html">Research</a><a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

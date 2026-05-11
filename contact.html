@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chinmay Rane</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .contact-section { background: var(--bg); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; }
+    .contact-left p { font-size: 15px; color: var(--text-mid); font-weight: 300; line-height: 1.8; margin-bottom: 36px; }
+    .contact-methods { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+    .cm { display: flex; gap: 14px; align-items: flex-start; }
+    .cm-icon { width: 38px; height: 38px; background: var(--copper-dim); border: 1px solid var(--copper-bd); display: flex; align-items: center; justify-content: center; color: var(--copper); font-size: 14px; flex-shrink: 0; }
+    .cm-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); margin-bottom: 3px; }
+    .cm-val { font-size: 13px; color: var(--text-mid); }
+    .cm-val a { color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .cm-val a:hover { color: var(--copper); }
+    .social-row { display: flex; gap: 10px; }
+    .soc-btn { width: 40px; height: 40px; background: var(--bg-2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--text-mid); text-decoration: none; font-size: 14px; border-radius: 50%; transition: all 0.2s; }
+    .soc-btn:hover { border-color: var(--copper); color: var(--copper); background: var(--copper-dim); }
+
+    .contact-form-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 2px solid var(--copper); padding: 40px; }
+    .cf-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--text); margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .cf-group { margin-bottom: 18px; }
+    .cf-group label { display: block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px; }
+    .cf-group input, .cf-group textarea, .cf-group select { width: 100%; background: var(--bg-2); border: 1px solid var(--border); padding: 11px 14px; font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text); outline: none; transition: border-color 0.2s; }
+    .cf-group input:focus, .cf-group textarea:focus { border-color: var(--copper); }
+    .cf-group input::placeholder, .cf-group textarea::placeholder { color: var(--text-light); }
+    .cf-group textarea { resize: vertical; min-height: 120px; }
+    .btn-send { width: 100%; background: var(--copper); color: white; border: none; padding: 14px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+    .btn-send:hover { background: var(--copper-lt); }
+    .cf-note { font-size: 11px; color: var(--text-light); margin-top: 10px; }
+
+    .success-msg { display: none; text-align: center; padding: 40px 20px; }
+    .success-icon { width: 56px; height: 56px; background: var(--copper-dim); border: 1px solid var(--copper-bd); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--copper); margin: 0 auto 16px; }
+    .success-msg h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--text); margin-bottom: 8px; }
+    .success-msg p { font-size: 13px; color: var(--text-mid); }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .cf-row { grid-template-columns: 1fr; }
+      .contact-form-card { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">C · R</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="inner">
+      <div class="eyebrow">Get in Touch</div>
+      <h1>Let's <em>Connect</em></h1>
+      <p>Open to new opportunities, research collaborations, and interesting AI projects.</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p>I'm always open to discussing new opportunities, research collaborations, or innovative AI projects. Whether it's a full-time role, consulting, or just a conversation — feel free to reach out.</p>
+          <div class="contact-methods">
+            <div class="cm"><div class="cm-icon"><i class="fas fa-envelope"></i></div><div><div class="cm-label">Email</div><div class="cm-val"><a href="mailto:drranechinmay@gmail.com">drranechinmay@gmail.com</a></div></div></div>
+            <div class="cm"><div class="cm-icon"><i class="fas fa-phone"></i></div><div><div class="cm-label">Phone</div><div class="cm-val"><a href="tel:+16825831880">+1 (682) 583-1880</a></div></div></div>
+            <div class="cm"><div class="cm-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="cm-label">Location</div><div class="cm-val">Austin, Texas</div></div></div>
+          </div>
+          <div class="social-row">
+            <a href="https://linkedin.com/in/ranechinmay" target="_blank" class="soc-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ChicoR-Dr" target="_blank" class="soc-btn"><i class="fab fa-github"></i></a>
+            <a href="https://scholar.google.com" target="_blank" class="soc-btn"><i class="fas fa-graduation-cap"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <div class="cf-title">Send a Message</div>
+          <div class="success-msg" id="success-msg">
+            <div class="success-icon"><i class="fas fa-check"></i></div>
+            <h3>Message Sent</h3>
+            <p>Thank you — I'll be in touch within 24 hours.</p>
+          </div>
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New message — chinmayrane.com">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="cf-row">
+              <div class="cf-group"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+              <div class="cf-group"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
+            </div>
+            <div class="cf-group"><label>Subject</label><input type="text" name="subject" placeholder="What's this about?"></div>
+            <div class="cf-group"><label>Message</label><textarea name="message" placeholder="Tell me about your project or opportunity…" required></textarea></div>
+            <button type="submit" class="btn-send"><i class="fas fa-paper-plane" style="margin-right:8px"></i>Send Message</button>
+            <p class="cf-note">I typically respond within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-logo">C · R</a>
+    <p>&copy; 2025 Chinmay Rane, PhD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a><a href="publications.html">Research</a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const msg = document.getElementById('success-msg');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = 'Sending…'; btn.disabled = true;
+        try {
+          const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+          if (res.ok) { form.style.display = 'none'; msg.style.display = 'block'; }
+          else { btn.textContent = 'Send Message'; btn.disabled = false; alert('Something went wrong. Please try again.'); }
+        } catch { btn.textContent = 'Send Message'; btn.disabled = false; alert('Network error.'); }
+      });
+    }
+  </script>
+</body>
+</html>
